@@ -10,8 +10,8 @@ depth = 0
 aim = 0
 
 for line in input_file:
-    command, value = line.strip().split(" ")
-    value = int(value)
+    command, value_str = line.strip().split(" ")
+    value = int(value_str)
     if command == "forward" :
         distance += value
         depth += aim*value

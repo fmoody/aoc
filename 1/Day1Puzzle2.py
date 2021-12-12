@@ -1,12 +1,14 @@
 # Advent of Code 2021 Day 1 Puzzle 2
 
+from typing import List
+
 #import sys
 #input_file = sys.stdin
 
 input_file = open("input_2")
 
 depth_increased = 0
-previous_values = []
+previous_values : List[int] = []
 
 for line in input_file:
     value = int(line.strip())
