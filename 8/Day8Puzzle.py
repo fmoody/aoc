@@ -7,12 +7,9 @@ def main():
     notes = read_input(input_file_name)
     counts = 0
     for note in notes:
-        print(f"Note: {notes[1]}")
         note_lengths = [len(pattern) for pattern in note[1]]
         for char_len in [2,4,3,7]:
             counts += note_lengths.count(char_len)
-            print(f"{char_len} : {note_lengths.count(char_len)}")
-        print(f"Progress count: {counts}")
 
     print(f"Counts returned: {counts}")
     return
